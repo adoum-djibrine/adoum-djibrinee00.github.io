@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf8">
+        <title>web disign</title>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: 'papins', sans serif;
+            }
+            body{
+                background: #0c1022;
+            }
+            nav{
+                display: flex;
+                padding: 2% 6%;
+                justify-content: space-between;
+            }
+            .logo{
+                font-size: 2em;
+                color: #fff;
+                text-decoration: none;
+                font-weight: 700;
+            }
+            .logo span{
+                color: #fe05e9;
+            }
+            .navbar{
+                flex: 1;
+                text-align: right;
+            }
+            .navbar ul li{
+                position: relative;
+                padding: 8px 12px;
+                display: inline-block;
+            }
+            .navbar a{
+                text-decoration: none;
+                color: #fff;
+                text-decoration: none;
+                padding: 8px 12px;
+                transition: 0.5s;
+            }
+            .navbar a:hover{
+                color: #fe05e9;
+            }
+            .navbar .active{
+                color: #fe05e9;
+            }
+            .text{
+                max-width: 50%;
+                padding: 85px 85px;
+                color: #fff;
+            }
+            .text h1{
+                font-size: 55px;
+            }
+            .text span{
+                color: #fe05e9;
+            }
+            .text p{
+                margin: 10px 0 20px;
+            }
+            .cercle span{
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                border-radius: 50%;
+                background: linear-gradient(#fe05e9, yellow);
+                filter: blur(20px);
+                animation: cercle 2s linear infinite;
+            }
+            @keyframes cercle{
+                100%{
+                    transform: rotate(360deg);
+                }
+            }
+            .cercle ::after{
+                content: "";
+                position: absolute;
+                width: 380px;
+                height: 380px;
+                background: #0c1022;
+                border-radius: 50%;
+            }
+            .cercle .image{
+                position: relative;
+                width: 380px;
+                right: 380px;
+                border-radius: 50%;
+                z-index: 1;
+                overflow: hidden;
+            }
+            .cercle img{
+                position: absolute;
+                left: 50%;
+                top: 30px;
+                transform: translateX(-50%);
+                max-width: 524px;
+                object-fit: cover;
+            }
+            .btn{
+                color: #fff;
+                background: linear-gradient(yellow, #fe05e9);
+                text-decoration:  none;
+                padding: 15px 40px;
+                display: inline-block;
+                margin-top: 20px;
+                transition: 00.5s;
+            }
+            .btn:hover{
+                letter-spacing: 3px;
+            }
+            .Img{
+                width: 410px;
+                height: 410px;
+                position: relative;
+            }
+            .cercle{
+                width:  100%;
+                height: 100%;
+                background: #fe05e9;
+                border-radius: 50%;
+                position: absolute;
+                left: 200%;
+                top: -99%;
+                justify-content: center;
+                align-items:  center;
+                display: flex;
+            }
+        </style>
+    </head>
+    <body>
+        <nav>
+            <a href=" " class="logo">port<span>folio</span></a>
+            <div class="navbar">
+                <ul>
+                    <li><a href="" class="active">accueil</a></li>
+                    <li><a href="">A propos</a></li>
+                    <li><a href="">services</a></li> 
+                    <li><a href="">portfolio</a></li>
+                    <li><a href="contact.html" class="btn">contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="text">
+            <h1>salut ce ADOUM DJIBRINE je suis un web <span>Designer</span></h1>
+            <p> un conceptioniste de site web et web disigner lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <a href="cv.html" class="btn">telecharger mon CV</a>
+        </div>
+        <div class="Img">
+            <div class="cercle">
+                <span></span>
+                <span></span>
+                <div class="image">
+                    <p>
+                        <img src="my_image.jpg" alt="" >
+                    </p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
